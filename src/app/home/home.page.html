@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calculadora do amor S2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-item>
+      <ion-label position="floating">Seu nome:</ion-label>
+      <ion-input [(ngModel)]="nome1"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Nome de seu amor:</ion-label>
+      <ion-input [(ngModel)]="nome2"></ion-input>
+    </ion-item>
+
+    <ion-button id="bota" expand="block" (click)="amar()">Calcular</ion-button>
+
+    <ion-item>
+      <ion-label><h1>{{r}}%</h1></ion-label>
+    </ion-item>
+
+    <ion-item>
+      <p>{{mensagem}}</p>
+    </ion-item>
+
+    <ion-item>
+      <img src="{{img}}">
+    </ion-item>
+  </div>
+</ion-content>
